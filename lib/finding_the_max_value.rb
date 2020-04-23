@@ -5,7 +5,8 @@ def find_max_value(array)
   highest_value = 0
 
   while count < array.length
-    if array[count] > array[(count + 1)]
+    comparison = count + 1
+    if array[count] > array[comparison]
       highest_value = array[count]
     end
     count +=1
